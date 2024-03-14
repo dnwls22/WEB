@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi col</title>
+    <style>
+        .poet {
+              /* columns: 단의 크기, 개수 */
+              columns: 200px 3;
+
+                /* 개별 속성 */
+                /* column-width: 200px; */
+                /* column-count: 3; */
+
+                /* 단 사이의 간격 */
+                column-gap: 50px;
+
+                /* 구분선 */
+                column-rule: 1px solid lightblue;
+
+                width: 900px;
+                padding: 20px;
+                margin: 50px;
+                border: 1px solid black;
+            
+        }
+
+        h2 {
+            /* 모든 단을 병합해서 제목을 표시 */
+            column-span: all;
+            text-align: center;
+            margin: 50px;
+        }
+
+        /* 문단간 들여쓰기 */
+        p{ text-indent: 20px;}
+
+        p::first-letter {
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>다단 나누기</h1>
+    <div class="poet">
+        <h2>ALOHA CLASS</h2>
+        <p>
+            헌법재판소의 장은 국회의 동의를 얻어 재판관중에서 대통령이 임명한다. 대통령은 국무회의의 의장이 되고, 국무총리는 부의장이 된다. 언론·출판에 대한 허가나 검열과 집회·결사에 대한 허가는 인정되지 아니한다. 정당의 설립은 자유이며, 복수정당제는 보장된다. 모든 국민은 종교의 자유를 가진다.
+        </p>
+        <p>
+            헌법재판소의 장은 국회의 동의를 얻어 재판관중에서 대통령이 임명한다. 대통령은 국무회의의 의장이 되고, 국무총리는 부의장이 된다. 언론·출판에 대한 허가나 검열과 집회·결사에 대한 허가는 인정되지 아니한다. 정당의 설립은 자유이며, 복수정당제는 보장된다. 모든 국민은 종교의 자유를 가진다.
+        </p>
+        <p>
+            헌법재판소의 장은 국회의 동의를 얻어 재판관중에서 대통령이 임명한다. 대통령은 국무회의의 의장이 되고, 국무총리는 부의장이 된다. 언론·출판에 대한 허가나 검열과 집회·결사에 대한 허가는 인정되지 아니한다. 정당의 설립은 자유이며, 복수정당제는 보장된다. 모든 국민은 종교의 자유를 가진다.
+        </p>
+        
+    </div>
+</body>
+</html>
